@@ -1,0 +1,203 @@
+/* Define the global and root variables */
+:root{
+    --primaryColor:#FF6969;
+    --backgroundColor:#faf0e6;
+    --primaryAccentColor:#FFD3B0;
+    --secoondaryColor:#FFF9DE;
+    --whiteColor:white;
+    --blackColor:#222222;
+    --primaryFont: 'Open Sans', sans-serif;
+
+    --navbarHeight: 3rem;
+    --cursiveFont: 'Pacifico',cursive;
+
+}
+
+/* Main CSS */
+
+body{
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+a:hover{
+    color: var(--primaryAccentColor)
+}
+
+.navigation{
+    background-color: var(--whiteColor);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.logo{
+    display:flex;
+    padding-left:20px;
+    width: 12rem;
+    align-items: center;
+}
+
+.logoImage{
+    padding:8px;
+    height: 2rem;
+    
+}
+
+.contactImage{
+    height: 2rem;
+    padding: 8px;
+    margin-right:40px;
+}
+
+.menuItems{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.menuItem{
+    margin-left: 20px;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    height: 690px;
+    background: linear-gradient(45deg,var(--secoondaryColor),var(--primaryAccentColor));
+    filter: drop-shadow(0px 3px 4px grey);
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px;
+}
+
+.bannerImage{
+    height: 650px;
+    border-radius: 100%;
+    
+}
+
+.greeting{
+    font-family: var(--cursiveFont);
+    font-size: xxx-large;    
+}
+
+.title{
+    font-size: 2.5rem;
+    color: white;
+}
+.titleSpan{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+
+/* .bannerLeft{
+    flex-grow: 2;
+} */
+
+.description{
+    margin: 30px 0px;
+    line-height: 2.5rem;
+
+}
+
+.showCVButton{
+    background: linear-gradient(#ebebeb,white,#ebebeb);
+    padding: 10px 15px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 3px grey);
+}
+
+.showCVButton:hover{
+    background: linear-gradient(white,rgb(215,215,215));
+}
+
+/* Services Section */
+.Services{
+    margin: 5rem;
+    /* padding: 30px 30px; */
+}
+
+.serviceText{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textSubHeading{
+    color: black;
+    letter-spacing: 0.4rem;
+    font-size: 1.25rem;
+}
+
+.textHeading{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.serviceCards{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.serviceCard{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 2px;
+    filter: drop-shadow(1px 1px 2px #fffefeaa);
+    margin: 15px;
+    padding: 40px;
+}
+
+.serviceCard:hover{
+    font-size: 115%;
+    filter: drop-shadow(3px 3px 8px rgb(67, 67, 67));
+    background: linear-gradient(45deg,var(--primaryAccentColor),var(--secoondaryColor));
+    .serviceIconDiv{
+        background-color: white;
+    }
+}
+
+.serviceIconDiv{
+    padding: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    /* color:black; */
+    background-color:var(--primaryAccentColor) ;
+}
+
+.material-symbols-outlined{
+    font-size: 3rem;
+}
+
+.serviceFeature{
+    font-size: 1rem;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.serviceIcon{
+    font-size: 3rem;
+    color: black;
+}
+
+.serviceTitle{
+    color: black;
+    font-size: 1.75rem;
+    margin:20px 0px;
+}
+
+.serviceFeatureIcon{
+    font-size: 1rem;
+}
