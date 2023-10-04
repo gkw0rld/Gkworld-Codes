@@ -1,0 +1,26 @@
+OPENING TAG
+CLOSING TAG
+
+    <tag_name atr="value" atr="value" atr="value"....>
+
+        cont
+    </tag_name>
+
+    youtube
+    google
+    insta 
+    facebook image redirecting to actual websites
+
+    homework: submit form
+
+    CSS: 
+    1. inline(in tag)
+    2. internal-
+    3. external
+
+    tag_name or class_name{
+        style:value;
+        style:value;
+        style:value;
+        style:value;
+    }
