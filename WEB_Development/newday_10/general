@@ -1,0 +1,2 @@
+In a function whatever we write after the "return;" nothing will be executed
+Only code before return will be executed

@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: url(681016.jpg) ;
+    background-size: 2300px;
+}
+
+li{
+    display: inline;
+    margin: 30px;
+    font-size: x-large;
+}
+
+
+ul{
+    margin-left: 900px;
+}
+
+nav{
+    background-image: linear-gradient(45deg,black, rgb(255, 255, 255),black);
+    height: 40px;
+}
+
+nav:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+h1{
+    margin-top: 100px;
+    font-size: xx-large;
+    color: azure;
+    text-align: center;
+}
+
+h1:hover{
+
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}

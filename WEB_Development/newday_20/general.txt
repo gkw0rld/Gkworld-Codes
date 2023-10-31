@@ -1,0 +1,10 @@
+http/https    hyper text transfer protocol --> s --> ssl --> secure socket layer
+
+Single key
+Double key
+
+most used hashes
+   md5-32 (length)
+   sha1-40 (length)
+   sha256-40+ (length)
+   

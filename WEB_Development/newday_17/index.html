@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Ra{
+            constructor()
+            {
+                document.write("This is a class <br/>");
+            }
+            add()
+            {
+                //document.write("Enter the two numbers to add");
+                var a = parseInt(prompt("Enter the value of a"));
+                var b = parseInt(prompt("Enter the value of b"));
+
+                document.write("a+b = " + (a+b));
+            }
+
+            sub()
+            {
+                //document.write("Enter the two numbers to sub");
+                var a = prompt("Enter the value of a");
+                var b = prompt("Enter the value of b");
+
+                document.write("a-b = " + (a+b));
+            }
+        }
+
+        var pro = new Ra;
+        pro.add();
+
+
+    </script>
+</body>
+</html>

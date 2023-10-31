@@ -1,0 +1,15 @@
+li
+{
+    margin: 30px;
+    float: left;
+    list-style: none;
+    font-size: larger;
+}
+ul
+{
+    margin-left: 1000px;
+}
+hr
+{
+    border: 2px solid black;
+}

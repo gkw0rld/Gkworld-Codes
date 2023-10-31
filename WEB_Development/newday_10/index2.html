@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="ab()">Click here for 2's table</button><br><br>
+    <button onclick="bc()">Click here to check if you can vote or not</button>
+    <script>
+        function ab()
+        {
+            var a = 1;
+            while(a<=10)
+            {
+                var mul = 2*a;
+                document.write(mul + "<br/>");
+                a++;
+            }
+        }
+
+        function bc()
+        {
+            var age = prompt("Enter your age");
+            if( age<18)
+            {
+                document.write("No! You are not 18+");
+            }
+            
+            else{
+                document.write("Yes! Your are 18+");
+            }
+        }
+    </script>
+</body>
+</html>

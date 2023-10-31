@@ -1,0 +1,46 @@
+p {
+    color: black;
+    font-size: 60px;
+    text-shadow: 3px 3px gray;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Pixelify Sans', cursive;
+    letter-spacing: 10px;
+}
+
+.one{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    overflow: scroll;
+    /* position: relative, absolute, fixed, sticky; */
+    /* overflow: hidden; */
+    box-shadow: 5px 5px gray;
+}
+
+.two{
+    margin-top: -300px;
+    margin-left: 350px;
+    font-size: large;
+}
+
+span{
+    color: blue;
+}
+
+.three
+{
+    font-size: x-large;
+    margin-top: 400px;
+}
+
+.box
+{
+    margin-left: 50px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid rgb(224, 113, 113);
+    position: fixed;
+}

@@ -1,0 +1,41 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    margin-top: 200px;
+    margin-left: 600px;
+    transition: width 2s, height 2s, transform 1s;
+}
+
+div:hover{
+    transform: rotate(180deg);
+    /* transform: translate(300px, 300px); */
+    height: 500px;
+    width: 500px;
+    
+}
+.img1{
+    margin-top: 20px;
+    transition-duration: 4s;
+}
+
+.img1:hover{
+    transform: rotate(-1000deg);
+    /* transform: scale(3,3); */
+    /* transform: skew(20deg); */
+    /* transform: scale(2,2); */
+    transform: translate(700px);
+}
+
+.img2{
+    margin-top: 50px;
+    margin-left: 600px;
+    transition-duration: 4s;
+}
+
+.img2:hover{
+    transform: rotate(-1000deg);
+    /* transform: scale(3,3); */
+    /* transform: skew(20deg); */
+    /* transform: scale(2,2); */
+}
