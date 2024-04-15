@@ -1,0 +1,136 @@
+//reverse a string without using predefined function
+
+#include<stdio.h>
+#include<string.h>
+
+void revstr(char *str1)
+{
+    int i,len;
+    char temp;
+    len = strlen(str1);
+
+    for(i=0;i<len/2;i++)
+    {
+        temp = str1[i];
+        str1[i] = str1[len-i-1];
+        str1[len-i-1] = temp;
+    }
+}
+
+int main()
+{
+    char str[50];
+    printf("Enter the string:");
+    gets(str);
+    printf("\n Before reversing the string:%S\n",str);
+    revstr(str);
+    printf("After reversing the string: %S",str);
+    return 0;
+}
+
+//check string is keyword or not
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char keyword[32][10] = {"auto","double","int","struct","break","else","long","switch","case","enum","register","typedef","char","extern","return","union","const","float","short","unsigned","continue","for","signed","void","default","goto","sizeof","volatile","do","if","static","while"};
+    char str[10];
+    printf("Enter the string\n");
+    scanf("%s",str);
+    int flag = 0,i;
+    for(i = 0;i<32;i++)
+    {
+        if(strcmp(str, keyword[i]==0))
+        {
+            flag = 1;
+        }
+    }
+    if(flag == 1)
+    printf("%s is a keyword",str);
+    else
+    printf("%s is not a keyword",str);
+    return 0;
+}
+
+//lexical analysis of x=y+z+2
+
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<ctype.h>
+
+int main()
+{
+    clrscr();
+    char ch[100];
+    cout<<"Enter the arithmetic equation:"<<endl;
+    cin>>ch;
+    cout<<"The arithmetic equation is "<<ch<<endl;
+    int n = str leng(ch);
+    int totalI = 0;
+    int totalN = 0;
+    int totalO = 0;
+    for(int i=0;i<n;i++)
+    {
+        if(isalpha (ch[i]))
+        {
+            totalI++;
+        }
+        else if (isdigit(ch[i]))
+        {
+            totalN++;
+        }
+        else{
+            totalO++;
+        }
+    }
+
+    int totalToken = totalI+totalN+totalO;
+    cout<<"The total Identifiers = "<<totalI<<endl;
+    cout<<"The total Numbers = "<<totalN<<endl;
+    cout<<"The total tokens = "<<totalTokens<<endl;
+    getch();
+    return 0;
+}
+
+//total no of vowels and consonants in a file
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    FILE *fp;
+    char c;
+    int vowels = 0, consonants = 0;
+    clrscr();
+    fp = fopen("student.txt","r");
+    if(fp == NULL)
+    {
+        printf("File Not Found");
+    }
+    else
+    {
+        for(c=getc(fp); c!=EOF; c=getc(fp))
+        {
+            if(c=='A' || c=='a' || c=='E' ||c=='e' ||c=='I' ||c=='i' ||c=='O' ||c=='o' ||c=='U' ||c=='u')
+            {
+                vowels++;
+            }
+
+            else if(c==' ')
+            {
+                continue;
+            }
+            else
+            {
+                consonants++;
+            }
+        }
+        printf("\n Total vowels are: %d",vowels);
+        printf("\n Total consonants are: %d",consonants);
+        getch();
+    }
+}
