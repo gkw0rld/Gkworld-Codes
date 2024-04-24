@@ -31,3 +31,32 @@ const myFunction = function(){
 }
 
 console.log(typeof bigNumber);
+
+
+// **************************  MEMORY  ************************************
+
+// two types of memory 
+//Stack (primitive)(copy is altered) and Heap (Non-Primitive)(main address value is altered)
+
+let myYoutubeName = "hiteshChaudharydotcom"     // all this data will go to the stack and a copy will be create if accessed by another variable
+let anotherName = myYoutubeName
+
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// the below object will go to heap memory and any changes will reflect to the original value
+// userOne variable will be stored in stack but the inside data will be accessed by reference
+
+let userOne = {
+    email: "gaurav@gmail.com",
+    upi: "gaurav@oksbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "khatri@gmail.com"
+
+console.log(userOne.email)  // email of userOne and UserTwo both changed
+console.log(userTwo.email)
