@@ -46,13 +46,39 @@ const users = [
                 }
             ]
 
-console.log(users[1].email);               // we will access the data just like accessing the array elements
+// console.log(users[1].email);               // we will access the data just like accessing the array elements
 
 
 
-console.log(Object.keys(tinderUser));         //   IMPORTANT
-console.log(Object.values(tinderUser));         //   IMPORTANT
-console.log(Object.entries(tinderUser));         
+// console.log(Object.keys(tinderUser));         //   IMPORTANT
+// console.log(Object.values(tinderUser));         //   IMPORTANT
+// console.log(Object.entries(tinderUser));         
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));        // to check if it has the given property
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));        // to check if it has the given property
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+const courses = {
+    courseName: "js in hindi",
+    price: 999,
+    courseInstructor: "Gaurav"
+}
+
+// courses.courseName;   // we can use this but we use another syntax to apply this
+
+const {courseInstructor: Instructor} = courses;     // now you can use courseInstructor instead of courses.courseInstructor
+
+// console.log(courseInstructor);
+console.log(Instructor);          //   we can also destructure the object is way
+
+
+// {
+//     "name": "Gaurav",
+//     "courseName": "js in hindi",           // this is how we define a JSON(javascript object notation) file (APIs in form of json file)
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},                      //   APIs in form of array (also json file)
+//     {}
+// ]
