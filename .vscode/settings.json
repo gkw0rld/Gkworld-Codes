@@ -4,5 +4,11 @@
         "new": "cpp",
         "vector": "cpp",
         "ostream": "cpp"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     }
 }

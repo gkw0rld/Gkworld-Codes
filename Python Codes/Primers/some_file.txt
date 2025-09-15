@@ -1,0 +1,1 @@
+This file is created by third_code.py file because some_file was not present during the opening of the file by the python
